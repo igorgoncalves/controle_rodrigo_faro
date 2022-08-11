@@ -16,8 +16,7 @@ jobs:
           cache: true
     
       - run: flutter pub get
-      - run: flutter analyze --fatal-warnings
-      - run: flutter test
+      
       - run: flutter build web --release
       
       - uses: FirebaseExtended/action-hosting-deploy@v0
